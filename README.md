@@ -40,7 +40,6 @@ It aggregates scopes from public lists and major platforms, extracts target URLs
 - `src/Collectors/` – Header/CSP/cookie/taint collection logic and models.
 - `src/config/db_factory.py` – Helper to create SQLAlchemy engines and sessions for the local SQLite databases in `data/`.
 - `data/` – Databases, intermediate results and collector outputs.
-- `data/collector/additionalData/persistent-clientside-xss-for-login-security/` – Modified exploit generator from “Don’t Trust The Locals” (Python 2).
 - `data/collector/additionalData/foxhound_taints/extension/` – Foxhound taint backend and DB setup.
 - `install.sh` – Helper script to build a local Python 2.7 environment for the exploit generator.
 - `requirements.txt` – Python 3 dependencies for the main pipeline.
