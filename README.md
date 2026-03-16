@@ -103,6 +103,12 @@ Be aware that:
   The taint backend uses PostgreSQL if configured.
 
 ---
+## Original Dataset
+The original dataset created during our thesis runs and used for analysis and the paper is available on Zenodo:
+
+[https://doi.org/10.5281/zenodo.19048300](https://doi.org/10.5281/zenodo.19048300)
+
+
 
 ## License and usage
 
