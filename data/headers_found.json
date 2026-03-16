@@ -1,0 +1,125 @@
+{
+    "exactvulnerabilitydisclosureprogram-exact-Intigriti": {
+        "X-Bug-Bounty": "Intigriti-<username>"
+    },
+    "rivianbugbounty-rivian-Intigriti": {
+        "X-Intigriti-Username": "<Your Username>"
+    },
+    "oda-oda-Intigriti": {
+        "User-Agent": "add intigriti-<username> at the end of your user-agent"
+    },
+    "intigriti-intigriti-Intigriti": {
+        "X-Intigriti-Username": "{Username}"
+    },
+    "VismaResponsibleDisclosure-visma-Intigriti": {
+        "User-Agent": "intigriti-<username>- mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/90.0.4430.212 safari/537.36",
+        "X-Bug-Bounty": "Intigriti-<username>"
+    },
+    "intergamma-intergamma-Intigriti": {
+        "X-Intigriti": "<username>"
+    },
+    "upholdcom-Uphold-Intigriti": {
+        "User-Agent": "add \"intigriti-<username>\" to your user agent"
+    },
+    "dstnybugbounty-dstny-Intigriti": {
+        "User-Agent": "add \"intigriti-<username>\" to your user agent"
+    },
+    "zabkagroup-vdp-zabkapolska-Intigriti": {
+        "User-Agent": "please include your intigriti email in user-agent"
+    },
+    "trouw-dpgm-Intigriti": {
+        "X-Intigriti-Username": "{Username}"
+    },
+    "nestl\u00e9vdp-nestl\u00e9-Intigriti": {
+        "User-Agent": "place into user-agent header your intigriti email"
+    },
+    "vrtnv-vrtnv-Intigriti": {
+        "X-Intigriti-Username": "{Username}"
+    },
+    "wpenginebugbounty-wpengine-Intigriti": {
+        "User-Agent": "intigriti-<username>"
+    },
+    "truelayer-truelayer-Intigriti": {
+        "X-Intigriti-Username": "{Username}"
+    },
+    "wolt-wolt-Intigriti": {
+        "User-Agent": "intigriti/{username}",
+        "X-Intigriti-Username": "{username}"
+    },
+    "peoplecert-peoplecert-Intigriti": {
+        "X-Intigriti-Username": "<username>"
+    },
+    "colruytgroupidcheck-colruyt-Intigriti": {
+        "X-Intigriti-Username": "{Username}"
+    },
+    "dpgmedia-dpgm-Intigriti": {
+        "X-Intigriti-Username": "{Username}"
+    },
+    "innovapost-innovapost-Intigriti": {
+        "X-Intigriti-Username": "{Username}"
+    },
+    "cloudways-digitalocean-Intigriti": {
+        "X-BBP-Researcher": "{Username}"
+    },
+    "responsiblevulnerabilitydisclosureprogram-citymesh-Intigriti": {
+        "User-Agent": "intigriti-vdp-<default user-agent>",
+        "X-Intigriti-Username": "{Username}"
+    },
+    "drumgrange-vdp--HackerOne": {
+        "X-HackerOne-Username": "xxxxx"
+    },
+    "banco_plata--HackerOne": {
+        "X-HackerOne-Research": "[H1 username]"
+    },
+    "anduril_industries--HackerOne": {
+        "X-HackerOne-Research": "[H1 username]"
+    },
+    "dailypay_vdp--HackerOne": {
+        "X-HackerOne-DailyPay-Research": "[H1 username]"
+    },
+    "henkel_vdp--HackerOne": {
+        "X-HackerOne-Research": "[H1 username]"
+    },
+    "coca-cola-tccc-Intigriti": {
+        "requestHeader": "UA-Intigriti"
+    },
+    "tines_automation_vdp--HackerOne": {
+        "X-HackerOne-Research": "[H1 username]"
+    },
+    "regions_financial--HackerOne": {
+        "X-HackerOne-Research": "[H1 username]"
+    },
+    "mueller_water_products_vdp--HackerOne": {
+        "X-HackerOne-Research": "[H1 username]"
+    },
+    "adevinta_vdp--HackerOne": {
+        "X-HackerOne-Research": "[H1 username]"
+    },
+    "roke_vdp--HackerOne": {
+        "X-HackerOne": "researcher"
+    },
+    "mufg-vdp--HackerOne": {
+        "X-HackerOne": "researcher"
+    },
+    "engagements/city-of-vienna-mbb-og--BugCrowd": {
+        "X-Bugcrowd": "researcher"
+    },
+    "engagements/rapyd--BugCrowd": {
+        "X-Bugcrowd": "researcher"
+    },
+    "fanduel-vdp--HackerOne": {
+        "X-HackerOne": "[HackerOne_Username]"
+    },
+    "notion--HackerOne": {
+        "X-HackerOne": "researcher"
+    },
+    "vectra_ai_vdp--HackerOne": {
+        "X-Bug-Bounty": "portal-username or token"
+    },
+    "unico_idtech--HackerOne": {
+        "X-HackerOne-Research": "[H1 username]"
+    },
+    "bankunited--HackerOne": {
+        "X-HackerOne-Research": "[H1 username]"
+    }
+}

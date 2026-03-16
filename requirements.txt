@@ -1,0 +1,15 @@
+telepot==12.7
+requests==2.32.5
+bs4==0.0.2
+sqlalchemy
+python-dotenv==1.2.2
+tldextract==5.3.0
+pandas==2.3.3
+dnspython==2.8.0
+openai==2.17.0
+playwright==1.43.0
+xmltodict==1.0.4
+psycopg2-binary
+mozprofile==3.0.0
+mitmproxy==10.3.1
+gunicorn

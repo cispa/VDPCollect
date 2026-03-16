@@ -1,0 +1,23 @@
+{
+  "name": "vdpcollect",
+  "version": "1.0.0",
+  "description": "This repository contains all data and contribution for our submission",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PR0M37H3US/VDPCollect.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PR0M37H3US/VDPCollect/issues"
+  },
+  "homepage": "https://github.com/PR0M37H3US/VDPCollect#readme",
+  "dependencies": {
+    "csp_evaluator": "^1.1.5"
+  }
+}

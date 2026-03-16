@@ -1,0 +1,62 @@
+# ---- Python general ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# venvs
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Python2 build ----
+Python-2.7.18/
+Python-2.7.18.tgz
+py2local/
+masterenv_python2/
+
+# ---- node ----
+node_modules/
+
+# ---- measurement output ----
+data/collector/findings/*
+data/collector/cookie_includes/*
+data/collector/retirejs/*
+data/collector/lighthouse/*
+data/collector/sslscan/*
+
+data/collector/additionalData/foxhound_taints/extension/*.json
+data/collector/prefiltered.json
+data/collector/results_exploits.json
+
+# ---- sensitive data ----
+.env
+src/Helper/Proxy/certs/
+
+# logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# editors
+.vscode/
+.idea/
+
+# databases
+*.sqlite
+*.db
+
+# external stuff
+src/external/ISDCAC
+src/external/retirejs
+src/external/persistent-clientside-xss-for-login-security
+src/external/foxhound
+
+# temporary
+*.tmp
+*.swp
+*.tgz

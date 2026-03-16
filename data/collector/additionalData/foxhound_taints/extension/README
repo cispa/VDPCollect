@@ -1,0 +1,2 @@
+1. Create a profile for firefox and load the extension (+allow running in private tabs)
+2. Start the receiving server via "uvicorn python_backend.py"

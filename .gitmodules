@@ -1,0 +1,9 @@
+[submodule "src/external/persistent-clientside-xss-for-login-security"]
+	path = src/external/persistent-clientside-xss-for-login-security
+	url = git@github.com:PR0M37H3US/persistent-clientside-xss-VDPCollect.git
+[submodule "src/external/retirejs_modified"]
+	path = src/external/retirejs_modified
+	url = git@github.com:PR0M37H3US/retire.js-VDPCollect.git
+[submodule "src/external/ISDCAC_Chrome"]
+	path = src/external/ISDCAC_Chrome
+	url = git@github.com:PR0M37H3US/I-Still-Dont-Care-About-Cookies-VDPCollect.git

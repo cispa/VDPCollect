@@ -1,0 +1,91 @@
+diff --git a/chrome/js/content.js b/chrome/js/content.js
+index f6d8fbb..ef925f0 100644
+--- a/chrome/js/content.js
++++ b/chrome/js/content.js
+@@ -1,27 +1,59 @@
+ /* global chrome, console */
+ 
+-(function() {
+-	var count = 0;
+-	var totalResults = [];
+-	chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+-		if (request.message) {
+-			var result = JSON.parse(request.message);
+-			totalResults.push(result);
+-			if (result.vulnerable) {
+-				count++;
+-				sendResponse({'count' : count});
+-				var out = [];
+-				result.results.forEach(function(r) {
+-					r.vulnerabilities = r.vulnerabilities || [];
+-					out.push(r.component + " " + r.version + " - Info: " +
+-						r.vulnerabilities.map(function(i) { return i.info }).flatten().join(" "));
+-				})
+-				console.warn("Loaded script with known vulnerabilities: " + result.url + "\n - " + out.join("\n - "));
+-			}
+-		} else if (request.getDetected) {
+-			sendResponse(totalResults);
+-		}
+-	});
+-})();
+-
+-Array.prototype.flatten = function() { return this.reduce((a,b) => a.concat(b), []) }
+\ No newline at end of file
++let count = 0;
++
++const totalResults = [];
++
++(function () {
++  chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
++    if (request.message) {
++      const result = JSON.parse(request.message);
++      totalResults.push(result);
++      if (result.vulnerable) {
++        result.results
++          .filter((x) => x.vulnerabilities && x.vulnerabilities.length > 0)
++          .forEach(() => count++);
++        const out = result.results.map((r) => {
++          r.vulnerabilities = r.vulnerabilities || [];
++          return `${r.component} ${r.version} - Info: ${r.vulnerabilities
++            .map((i) => i.info)
++            .join(" ")}`;
++        });
++
++        console.log(
++          `⚠️ Loaded script with known vulnerabilities: ${
++            result.url
++          }\n - ${out.join("\n - ")}`
++        );
++
++        // Changes by Decker for usage and extraction via playwright
++        const vulnerableResults = result.results.filter(
++          (x) => x.vulnerabilities && x.vulnerabilities.length > 0
++        );
++                
++        // Log each vulnerable component's version and its vulnerabilities
++        vulnerableResults.forEach((x) => {
++          console.log(`[*] Vulnerable Software: ${x.component} - ${x.version}`);
++          x.vulnerabilities.forEach((y) => {
++            console.log(`  [*] Vulnerability:`, y);
++          });
++      });
++
++        const vulnerabilitiesJSON = {};
++
++        vulnerableResults.forEach((x) => {
++            const key = `${x.component} - ${x.version}`;
++            vulnerabilitiesJSON[key] = x.vulnerabilities;
++        });
++
++        // Log the JSON object for verification
++        console.log(`VULN_DATA: ${JSON.stringify(vulnerabilitiesJSON, null, 2)}`);
++
++      }
++      sendResponse({ count: count });
++    } else if (request.getDetected) {
++      sendResponse(totalResults);
++    }
++    return false;
++  });
++})();
+\ No newline at end of file
