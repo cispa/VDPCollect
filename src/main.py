@@ -77,7 +77,6 @@ def main():
     telegramBot.info("------ STARTING COLLECTION PHASE II ------")
     Coll = Collector(logger, telegramBot)
     Coll.main()
-    """
 
 
 if __name__ == "__main__":
